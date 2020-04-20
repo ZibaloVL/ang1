@@ -1,18 +1,25 @@
-<h1>root</h1>
+<h1>Hellow Angular</h1>
+<div>
+    <button (click)="backgroundTogle=!backgroundTogle">Togle</button>
+</div>
 
-<input type="text" name="" id="" (input)="onInput($event)">
-<p>{{inputValue}}</p>
-<br>
+<div 
+    [ngStyle]="{
+        margin: '50px',
+        padding: '40px',
+        width:'200px', 
+        height:'200px',
+        background:backgroundTogle ? 'red': 'black'
+    }">
+</div>
+
 <hr>
-<hr>
-<input type="text" (input) = "onInput2($event)" [value]="title">
-<h2>{{title}}</h2>
-<input type="text" [(ngModel)]="titleNg">
-<h2>{{titleNg}}</h2>
-<hr>
-<br>
-<br>
-<br>
-<br>
-<app-post></app-post>
-<hr>
+<div>
+    <button (click)="classTogle=!classTogle">Togle</button>
+</div>
+<p
+    [ngClass]= "{
+        red: classTogle,
+        blue: !classTogle
+    }"
+>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, debitis praesentium ad quas, cumque autem a alias quo repellat odio dolorem, voluptas distinctio quis asperiores est esse rerum perspiciatis aliquam.</p>
