@@ -23,3 +23,25 @@
         blue: !classTogle
     }"
 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, debitis praesentium ad quas, cumque autem a alias quo repellat odio dolorem, voluptas distinctio quis asperiores est esse rerum perspiciatis aliquam.</p>
+<h1>Hellow Angular</h1>
+<div>
+    <button (click)="togle=!togle">Togle</button>
+</div>
+
+<div 
+    [ngStyle]="{
+        margin: '50px',
+        padding: '40px',
+        width:'200px', 
+        height:'200px',
+        color:'rgb(255,255,255)',
+        background:backgroundTogle ? 'red': 'black'
+    }"> 
+    <p *ngIf="togle; else net">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptate aliquid, vero ex eaque tenetur explicabo sed error itaque, officia distinctio ab ipsa odit molestias fugiat asperiores corporis exercitationem dicta?</p>
+    <ng-template #net>
+        <p>net</p>
+    </ng-template>
+    
+</div>
+
+<hr>
