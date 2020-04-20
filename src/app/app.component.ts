@@ -9,4 +9,5 @@ export class AppComponent {
   backgroundTogle = false;
   classTogle = true;
   togle = true;
+  togleSwitch: any = true;
 }
