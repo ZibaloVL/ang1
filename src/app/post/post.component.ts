@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 
-export class PostComponent {}
+export class PostComponent {
+   postTitle: String = 'default post';
+}

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'apppppppppppp';
-  titleNg ='ngngngngn'
+  titleNg = 'ngngngngn';
   inputValue = '';
 
   onInput(event?) {
