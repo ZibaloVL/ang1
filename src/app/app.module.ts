@@ -4,14 +4,15 @@ import {FormsModule} from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { PostComponent } from './post/post.component';
-//import { Post2Component } from './post2/post2.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { Block2Component } from './block2/block2.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent,
-    // Post2Component
+    PostFormComponent,
+    Block2Component,
   ],
   imports: [
     BrowserModule,

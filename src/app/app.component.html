@@ -1,53 +1,5 @@
 <h1>Hellow Angular</h1>
-<div>
-    <button (click)="backgroundTogle=!backgroundTogle">Togle</button>
-</div>
-
-<div 
-    [ngStyle]="{
-        margin: '50px',
-        padding: '40px',
-        width:'200px', 
-        height:'200px',
-        background:backgroundTogle ? 'red': 'black'
-    }">
-</div>
+<hr>
 
 <hr>
-<div>
-    <button (click)="classTogle=!classTogle">Togle</button>
-</div>
-<p
-    [ngClass]= "{
-        red: classTogle,
-        blue: !classTogle
-    }"
->Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, debitis praesentium ad quas, cumque autem a alias quo repellat odio dolorem, voluptas distinctio quis asperiores est esse rerum perspiciatis aliquam.</p>
-<hr>
-<div>
-    <button (click)="togle=!togle">Togle</button>
-</div>
-
-<div 
-    [ngStyle]="{
-        margin: '50px',
-        padding: '40px',
-        width:'200px', 
-        height:'200px',
-        color:'rgb(255,255,255)',
-        background:backgroundTogle ? 'red': 'black'
-    }"> 
-    <p *ngIf="togle; else net">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptate aliquid, vero ex eaque tenetur explicabo sed error itaque, officia distinctio ab ipsa odit molestias fugiat asperiores corporis exercitationem dicta?</p>
-    <ng-template #net>
-      <h3>Else net</h3>
-    </ng-template>
-    
-</div>
-<hr>
-<button (click)="togleSwitch =!togleSwitch">Toggle</button>
-<button (click)="togleSwitch = 111">default</button>
-<div [ngSwitch]="togleSwitch">
-        <p *ngSwitchCase="true">true</p>
-        <p *ngSwitchCase="false">false</p>
-        <p *ngSwitchDefault>default</p>
-</div>
+<app-block2></app-block2>
