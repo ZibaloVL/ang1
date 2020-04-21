@@ -6,6 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { Block2Component } from './block2/block2.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { Block2Component } from './block2/block2.component';
     AppComponent,
     PostFormComponent,
     Block2Component,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
