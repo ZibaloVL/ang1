@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 export interface Post {
-  title: String,
-  text: String,
-  id?: number
+  title: string;
+  text: string;
+  id?: number;
 }
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ export interface Post {
 })
 export class AppComponent {
  posts: Post[] = [
-   {title: "Lord", text: "Stars", id: 1 },
-   {title: "Lord2", text: "Stars2", id: 2 }
- ]
+   {title: 'Lord', text: 'Stars', id: 1 },
+   {title: 'Lord2', text: 'Stars2', id: 2 }
+ ];
 }
