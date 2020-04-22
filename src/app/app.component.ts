@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostComponent } from './post/post.component';
 
 export interface Post {
   title: string;
@@ -17,5 +18,8 @@ export class AppComponent {
  ];
  updatePosts( post: Post ) {
    this.posts.unshift( post );
+ }
+ delPostbyId( id: number ) {
+  this.posts = this.posts.filter( p => p.id !== id )
  }
 }
