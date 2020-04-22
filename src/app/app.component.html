@@ -4,7 +4,9 @@
     <hr>
     <app-block2></app-block2>
     -->
-    <app-post-form></app-post-form>
+    <app-post-form
+        (onAdd)="updatePosts($event)"
+    ></app-post-form>
     <hr>
     <app-post
         *ngFor="let p of posts"

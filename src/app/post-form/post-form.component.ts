@@ -1,6 +1,6 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Post } from '../app.component';
-import { EventEmitter } from 'events';
+
 
 @Component({
   selector: 'app-post-form',
@@ -8,8 +8,8 @@ import { EventEmitter } from 'events';
   styleUrls: ['./post-form.component.scss']
 })
 export class PostFormComponent implements OnInit {
-  @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>();
 
+  @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>();
   title = '';
   text = '';
   constructor() { }
@@ -20,7 +20,8 @@ export class PostFormComponent implements OnInit {
         title: this.title,
         text: this.text
       };
-      console.log ('post', post);
+      this.onAdd.emit( post );
+//      console.log ( 'post', post );
       this.title = '';
       this.text = '';
     }
