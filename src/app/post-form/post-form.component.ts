@@ -9,8 +9,8 @@ import { Post } from '../app.component';
 })
 export class PostFormComponent implements OnInit {
 
-  @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>();
-  @ViewChild ('titleInput', { static: false })  inputRef: ElementRef;
+  @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>(); //для создания события
+  @ViewChild ('titleInput', { static: false })  inputRef: ElementRef; // видеть елемент внутри 
   title = '';
   text = '';
   constructor() { }
