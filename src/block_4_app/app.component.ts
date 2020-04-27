@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'anBlok6';
+  title = 'anBlok4';
+  isVisible = true;
+  isVisibleTagle() {
+    this.isVisible = !this.isVisible;
+  }
 }

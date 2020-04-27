@@ -1,0 +1,14 @@
+<h1>BLOCK5</h1>
+<p>async {{ p | async }}</p>
+<button class="btn" (click)="searchTagle='title'">TITLE</button>
+<button class="btn" (click)="searchTagle='text'">TEXT</button>
+<input type="text" [(ngModel)]="search">
+<hr>
+<button class="btn" (click)="addPost()">Add Post</button>
+<strong>ddd{{search}}</strong>
+<div class="container">
+  <div *ngFor="let post of posts | filter: search: searchTagle">
+    <h2>{{post.title}}</h2>
+    <p>{{post.text}}</p>
+  </div>
+</div>

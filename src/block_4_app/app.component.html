@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>DIRECTIVE BLOCK4</h1>
+  <p appStyle="green" [dStyle]="{border: '3px solid', borderRadius: '5px', padding: '50px' }">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, dignissimos?</p>
+  <hr>
+  <p appStyle="grey" [dStyle]="{border: '10px solid', borderRadius: '15px', padding: '150px'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, dignissimos?</p>
+<hr>
+<br>
+<button type="button" class="btn" (click)="isVisibleTagle()">isVisibleTagle</button>
+<br>
+<div class="wrap" *ngIf="isVisible">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iure ipsam perspiciatis repellat, fuga laudantium facilis. Accusamus doloribus tempore perferendis.</p>
+</div>
+<ng-template [ngIf]="isVisible" >
+  <div class="wrap">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iure ipsam perspiciatis repellat, fuga laudantium facilis. Accusamus doloribus tempore perferendis.</p>
+  </div>
+</ng-template>
+<hr>
+<div class="wrap" *appIfnot="!isVisible">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa iure ipsam perspiciatis repellat, fuga laudantium facilis. Accusamus doloribus tempore perferendis.</p>
+</div>
+</div>
+
