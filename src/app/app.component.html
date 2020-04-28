@@ -7,5 +7,11 @@
     <hr>
     <h2>{{appCounterService.count}}</h2>
   </div>
-  
+  <hr>
+  <div class="card">
+    <button type="button"  class="btn" (click)="localCounterService.increase()">+</button>
+    <button type="button"  class="btn" (click)="localCounterService.decriase()">-</button>
+    <hr>
+    <h2>{{localCounterService.count}}</h2>
+  </div>
 </div>
